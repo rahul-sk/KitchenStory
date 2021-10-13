@@ -1,5 +1,10 @@
 # KitchenStory
 Simplilearn Phase-2 final project<br><br>
+
+# External dependency
+This app depends on a custom Json Server for all the users and items data which can be cloned from the below link
+https://github.com/rahul-sk/CustomJsonServer.git <br>
+Once cloned, run <strong>npm start</strong> to start the json server.
 # Development server
 Run <strong>ng serve -o</strong> for a dev server. The app will be automatically rendered in the browser . The app will automatically reload if you change any of the source files.
 <br><br>
