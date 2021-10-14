@@ -14,7 +14,7 @@
             <div *ngIf="checkLoginStatus()">
                 <!-- <button [routerLink]='edit-profile' class="btn btn-danger">Edit Profile</button> -->
 
-                <button [routerLink]="['/edit-profile', uid]" class="btn btn-primary me-2">Edit Profile</button>
+                <button (click)="refresh()" [routerLink]="['/edit-profile', uid]" class="btn btn-primary me-2">Edit Profile</button>
 
 
 

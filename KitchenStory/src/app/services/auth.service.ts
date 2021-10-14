@@ -25,10 +25,16 @@ export class AuthService implements CanActivate {
   Logout(){
      localStorage.removeItem('isLoggedIn');
      localStorage.removeItem('userId');
+     localStorage.clear();
   }
 
   addUser(user:User):Observable<User>{
     return this._http.post<User>("http://localhost:3000/users",user);
   
+  }
+
+  refreshUid(){
+    return parseInt(localStorage.userId);
+
   }
 }

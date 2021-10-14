@@ -47,6 +47,9 @@ export class LoginComponent implements OnInit {
   isValidUser():boolean{
     for(const usr of this.usersList){
       if(this.user.username==usr.username && this.user.password==usr.password){
+        // localStorage.setItem('userId',JSON.stringify(usr.id));
+        localStorage.clear();
+        // localStorage.removeItem('userId');
         localStorage.setItem('userId',JSON.stringify(usr.id));
 
         return true;

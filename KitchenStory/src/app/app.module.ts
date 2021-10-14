@@ -29,7 +29,7 @@ import { EditProfileComponent } from './edit-profile/edit-profile.component';
     FinalPageComponent,
     LoginComponent,
     RegisterComponent,
-    EditProfileComponent
+    EditProfileComponent,
   ],
   imports: [
     BrowserModule,
@@ -39,6 +39,6 @@ import { EditProfileComponent } from './edit-profile/edit-profile.component';
     Ng2SearchPipeModule
   ],
   providers: [ProductService],
-  bootstrap: [MainComponent,HeaderComponent,ProductsComponent]
+  bootstrap: [MainComponent]
 })
 export class AppModule { }

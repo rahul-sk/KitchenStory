@@ -12,4 +12,9 @@ export class PaymentComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  submitHelper(payForm:any){
+    console.log(payForm);
+    
+  }
+
 }
