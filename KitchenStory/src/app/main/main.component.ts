@@ -15,6 +15,7 @@ export class MainComponent implements OnInit {
   constructor(private cartService:CartService,private authService:AuthService,private _route:Router) { }
 
   ngOnInit(): void {
+    this.authService.refreshUid();
     this.uid=parseInt(localStorage.userId);
     console.log("The UID Retrieved from local storage is ..."+this.uid);
 
@@ -37,6 +38,11 @@ export class MainComponent implements OnInit {
   logout(){
     this.authService.Logout();
     this._route.navigate(['/products'])
+  }
+
+  refresh(){
+    this.uid=parseInt(localStorage.userId);
+
   }
 
   

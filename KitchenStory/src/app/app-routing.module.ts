@@ -14,7 +14,7 @@ const routes: Routes = [
   {path:'', redirectTo:'products',pathMatch:'full'},
   {path:'login',component:LoginComponent},
   {path:'edit-profile/:id',component:EditProfileComponent},
-  {path:'register',component:RegisterComponent},
+    {path:'register',component:RegisterComponent},
   {path:'products',component:ProductsComponent},
   {path:'cart',component:CartComponent},
   {path:'main',component:MainComponent},
