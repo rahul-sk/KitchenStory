@@ -64,7 +64,7 @@
                         <input #amt="ngModel" required name="amount" type="text" class="form-control text-right" id="exampleInputAmount" placeholder="Enter the amount" ngModel>
                         <div class="input-group-append"><span class="input-group-text">.00</span></div>
                         <div *ngIf="amt.touched && amt.invalid" class="alert alert-danger">
-                            <p *ngIf="amt.errors?.required">  Amount is required</p>
+                            <p *ngIf="amt.errors?.required">  Amount is required.</p>
                         </div>
                     </div>
                 </div>
